@@ -1,0 +1,17 @@
+/* Criando class login-center */
+.login-center {
+    background-color: rgba(50, 255, 100, 0.3);
+    border-radius: 2%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5%;
+    text-align: center;
+}
+
+/* Criando seletor para a tag footer */
+footer {
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(58, 58, 58);
+}

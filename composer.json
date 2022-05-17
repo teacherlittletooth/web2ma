@@ -1,0 +1,17 @@
+{
+    "name": "qi/donini_m",
+    "description": "web 2 php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/",
+            "Model\\": "src/model/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Paulo Donini"
+        }
+    ],
+    "require": {}
+}
