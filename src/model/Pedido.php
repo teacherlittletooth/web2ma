@@ -6,6 +6,7 @@ class Pedido
 {
     //Atributos
     private $codPedido;
+    public $dataHora;
     public $itens;
     public $quant;
     public $pag;
@@ -25,6 +26,7 @@ class Pedido
     {
         date_default_timezone_set("America/Sao_Paulo");
         echo "<br>Data e hora do pedido:<br>";
+        $this->dataHora = date('Y-m-d H:i:s'); //gravando data e hora do pedido no atributo
         echo date("d/m/Y") . "<br>";
         echo date("H:i:s");
     }
@@ -36,7 +38,7 @@ class Pedido
         return $this->codPedido;
     }
 
-
+    
     public function gerarDesconto()
     {
         if( $this->quant >= 5 && $this->local == 'Centro' || $this->local == "Salomé" ) {
