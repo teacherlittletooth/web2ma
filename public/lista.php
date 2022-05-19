@@ -23,6 +23,8 @@ use Database\Database;
         <th>Quantidade</th>
         <th>Pagamento</th>
         <th>Local</th>
+        <th></th>
+        <th></th>
     </thead>
     <tbody>
 
@@ -35,6 +37,12 @@ use Database\Database;
                 <td> <?= $linha->quant ?> </td>
                 <td> <?= $linha->pag ?> </td>
                 <td> <?= $linha->local ?> </td>
+                <td>
+                    <a href="../public/edit_pedido.php?cod=<?= $linha->cod ?>">Editar</a>
+                </td>
+                <td>
+                    <a>Apagar</a>
+                </td>
             </tr>
 
         <?php endforeach; ?>

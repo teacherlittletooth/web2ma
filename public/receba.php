@@ -57,7 +57,7 @@ require_once "../src/views/header_nav.php";
 
         <form method="get" action="pedido.php">
             <b>Itens:</b><br>
-            <div class="form-check">
+            <div class="form-check form-switch">
                 <input type="checkbox" class="form-check-input" name="ingrediente[]" value="Pão"/> Pão <br>
                 <input type="checkbox" class="form-check-input" name="ingrediente[]" value="Alface"/> Alface <br>
                 <input type="checkbox" class="form-check-input" name="ingrediente[]" value="Queijo"/> Queijo <br>
