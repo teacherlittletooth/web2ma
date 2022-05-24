@@ -20,7 +20,7 @@ require_once "../src/views/header_nav.php";
     //var_dump($resultDb);
 ?>
 
-<form method="post" action="../src/banco/atualiza.php" onsubmit="confirm('Atualizar pedido?'); ">
+<form method="post" action="../banco/atualiza.php" onsubmit="confirm('Atualizar pedido?'); ">
     <h2>Atualização de dados</h2>
     
     <hr> Código: <br>
