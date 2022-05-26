@@ -38,10 +38,14 @@ use Database\Database;
                 <td> <?= $linha->pag ?> </td>
                 <td> <?= $linha->local ?> </td>
                 <td>
-                    <a href="../public/edit_pedido.php?cod=<?= $linha->cod ?>">Editar</a>
+                    <a href="../public/edit_pedido.php?cod=<?= $linha->cod ?>">
+                        <img src="../public/assets/img/pencil.svg" alt="Editar">
+                    </a>
                 </td>
                 <td>
-                    <a>Apagar</a>
+                    <a onclick="confirmaDelete(<?= $linha->cod ?>);" >
+                        <i class="bi bi-trash"></i>
+                    </a>
                 </td>
             </tr>
 
@@ -51,3 +55,13 @@ use Database\Database;
 </table>
 
 <?php require_once "../src/views/footer.php"; ?>
+
+<script>
+    function confirmaDelete(id) {
+        if( confirm("Deseja excluir o registro "+id+"?") ) {
+            window.location.href='../banco/delete.php?cod='+id;
+        } else {
+            alert('Exclusão cancelada!');
+        }
+    }
+</script>

@@ -15,3 +15,7 @@ footer {
     margin-top: 5%;
     color: rgb(58, 58, 58);
 }
+
+a {
+    cursor: pointer;
+}
